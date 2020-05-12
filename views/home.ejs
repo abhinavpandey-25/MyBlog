@@ -1,0 +1,6 @@
+<%-include("partials/header")%>
+<% posts.forEach((post)=>{%>
+    <h1><%=post.post%></h1>
+    <p style="font-size: 10px;"><%=post.textarea.slice(0,100)+'...'%> <a  href="/posts/<%=post.post%>"> Readmore </a></p> 
+<%})%>
+<%-include("partials/footer")%>
